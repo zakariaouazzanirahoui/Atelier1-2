@@ -1,0 +1,14 @@
+def factoriel(nombre):
+    if nombre == 0 or nombre == 1 :
+        return 1 
+    return nombre * factoriel(nombre-1)
+
+nombre = int(input("saisir le nombre :"))   
+print("le factoriel de ce nombre est  :", factoriel(nombre))
+
+u=0
+s=0
+for i in range(1,7):
+        s = s + u
+        u = factoriel(i) / i
+print(s) 
